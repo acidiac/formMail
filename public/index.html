@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- production version, optimized for size and speed -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        
+        <title>A simple Email formatter</title>
+    </head>
+    <body>
+    <div class="container" id="app">
+        <div class="row">
+            <h3 class="fnt--blue">MailForm</h3><hr/>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" v-model="rName" placeholder="FirstName LastName (eg. Amit Chanchal)">
+            </div>
+            <div class="col-md-6">
+                <input class="col-md-6" type="text" v-model="sName" placeholder="FirstName LastName (eg. Amit Chanchal)">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" v-model="orgName" placeholder="SKUP..">
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+           
+        
+
+        <p>
+            {{ rName }}
+            {{ sName }}
+            {{ orgName }}
+        </p>
+            
+
+
+
+        
+    </div>
+
+    <script src="app.js"></script>
+    
+    </body>
+</html>
